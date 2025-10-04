@@ -62,7 +62,7 @@ export const googleAuthConfig = {
 // Microsoft OAuth configuration
 export const microsoftAuthConfig = {
   client_id: MICROSOFT_CLIENT_ID,
-  redirect_uri: APP_URL,
+  redirect_uri: `${APP_URL}/auth/microsoft/callback`,
   scope: 'openid email profile User.Read',
   response_type: 'code',
   response_mode: 'query'
