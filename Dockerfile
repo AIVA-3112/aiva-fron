@@ -20,8 +20,9 @@ ENV NODE_ENV=production
 RUN npm run build
 
 # Expose port 8080
-EXPOSE 5173
+EXPOSE 8080
 
 # Start the application
 
 CMD ["npm", "run", "preview"]
+
