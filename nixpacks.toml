@@ -12,4 +12,5 @@
 [phases.start]
   cmd = "npm run preview"
 
-  ports = ["5173"]
+  ports = ["8080"]
+
