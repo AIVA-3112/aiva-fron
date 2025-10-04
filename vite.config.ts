@@ -7,7 +7,7 @@ import { componentTagger } from "lovable-tagger";
 export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
-    port: 8080,  // Changed from 5173 to 8080 to match Azure App Service default port
+    port: 5173,  // Changed from 5173 to 8080 to match Azure App Service default port
     strictPort: true,
     proxy: {
       "/api": {
@@ -19,7 +19,7 @@ export default defineConfig(({ mode }) => ({
   },
   preview: {
     host: true,
-    port: 8080,  // Changed from 5173 to 8080 to match Azure App Service default port
+    port: 5173,  // Changed from 5173 to 8080 to match Azure App Service default port
     strictPort: true,
     allowedHosts: [
       'localhost',
